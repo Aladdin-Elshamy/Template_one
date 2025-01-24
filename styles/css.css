@@ -30,6 +30,7 @@ body {
 .container {
     width: 90%;
     margin-inline: auto;
+    max-width: 1200px;
 }
 
 /* Global styles */
