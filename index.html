@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Template web page v1.0</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon-16x16.png">
         <link rel="stylesheet" href="styles/css.css">
         <link rel="stylesheet" href="styles/normalize.css">
-        <link rel="stylesheet" href="styles/all.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link
             href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,100;1,400&family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100&display=swap"
             rel="stylesheet">
-
+        <!-- AOS CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+        <!-- SWIPER CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     </head>
-
     <body>
         <!-- Header -->
-        <div class="header">
+        <header class="header">
             <div class="container">
-                <img class="logo" src="images/logo.png" alt="logo">
-                <div class="links">
+                <img class="logo" src="images/logo.png" alt="A logo of the website.">
+                <navbar class="links">
                     <span class="icon">
                         <span></span>
                         <span></span>
@@ -35,53 +38,58 @@
                         <li><a href="#about">About</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
-                </div>
+                </navbar>
             </div>
-        </div>
+        </header>
         <!-- Header -->
         <!-- Loading Page -->
-        <div class="loading-page">
+        <main>
+
+         
+        <section class="loading-page">
             <div class="loading-text">
                 <h1>Hello, There!</h1>
                 <p>We are Leon - Super Creative & Minimal Agency Web Template</p>
             </div>
-        </div>
+        </section>
         <!-- Loading Page -->
         <!-- Features -->
-        <div class="features" id="features">
-            <div class="container">
-                <div class="feat">
+        <section class="features" id="features">
+            <div class="container" >
+                <article class="feat" data-aos="fade-up" data-aos-duration="260">
                     <i class="fa-sharp fa-solid fa-wand-magic-sparkles"></i>
                     <h3>Tell Us Your Idea</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis voluptate id at vero magni corporis
                         dignissimos, labore quo alias esse dolorem atque, aspernatur laborum. Consequuntur dolorem odit
                         doloribus quo reiciendis.</p>
-                </div>
-                <div class="feat">
+                </article>
+                <article class="feat" data-aos="fade-up" data-aos-duration="260" data-aos-delay="150">
                     <i class="fa-sharp fa-solid fa-gem"></i>
                     <h3>We Will Do All The Work</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis voluptate id at vero magni corporis
                         dignissimos, labore quo alias esse dolorem atque, aspernatur laborum. Consequuntur dolorem odit
                         doloribus quo reiciendis.</p>
-                </div>
-                <div class="feat">
+                </article>
+                <article class="feat" data-aos="fade-up" data-aos-duration="260" data-aos-delay="250">
                     <i class="fa-solid fa-earth-americas"></i></i>
                     <h3>Your Product Is Worldwide</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis voluptate id at vero magni corporis
                         dignissimos, labore quo alias esse dolorem atque, aspernatur laborum. Consequuntur dolorem odit
                         doloribus quo reiciendis.</p>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
         <!-- Features -->
         <!-- Services -->
-        <div class="services" id="services">
+        <section class="services" id="services">
             <div class="container">
-                <h1 class="special-heading">Services</h1>
-                <p>Don't be busy, be productive</p>
+                <header data-aos="fade-down">
+                    <h1 class="special-heading">Services</h1>
+                    <p>Don't be busy, be productive</p>
+                </header>
                 <div class="services-content">
                     <div class="col">
-                        <div class="srv">
+                        <article class="srv" data-aos="fade-right">
                             <i class="fa-solid fa-window-maximize fa-2xl"></i>
                             <div class="text">
                                 <h3>Web Design</h3>
@@ -91,8 +99,8 @@
                                     websites.
                                 </p>
                             </div>
-                        </div>
-                        <div class="srv">
+                        </article>
+                        <article class="srv" data-aos="fade-right">
                             <i class="fa-solid fa-layer-group fa-2xl"></i>
                             <div class="text">
                                 <h3>Web Development</h3>
@@ -102,10 +110,10 @@
                                     intranet.
                                 </p>
                             </div>
-                        </div>
+                        </article>
                     </div>
                     <div class="col">
-                        <div class="srv">
+                        <article class="srv" data-aos="fade-right">
                             <i class="fa-solid fa-palette fa-2xl"></i>
                             <div class="text">
                                 <h3>Graphic Design</h3>
@@ -115,8 +123,8 @@
                                     typography, photography and illustration.
                                 </p>
                             </div>
-                        </div>
-                        <div class="srv">
+                        </article>
+                        <article class="srv" data-aos="fade-right">
                             <i class="fa-brands fa-sketch fa-2xl"></i>
                             <div class="text">
                                 <h3>UI & UX</h3>
@@ -126,62 +134,77 @@
                                     pleasure provided in the interaction.
                                 </p>
                             </div>
-                        </div>
+                        </article>
                     </div>
-                    <div class="col">
+                    <div class="col" data-aos="fade-left">
                         <div class="image image-media">
-                            <img src="images/3.jpg" alt="mountain">
+                            <img src="images/mountain_3.jpg" alt="A mountain." loading="lazy">
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- Services -->
         <!-- Portfolio -->
-        <div class="portfolio" id="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class="container">
-                <h2 class="special-heading">Portfolio</h2>
-                <p>If you do it right, it will last forever.</p>
-                <div class="portfolio-content">
-                    <div class="card">
-                        <img src="images/laptop-kladblok-smartphone.jpg" alt="" />
-                        <div class="info">
-                            <h3>Project Here</h3>
-                            <div class="line"></div>
-                            <p>My creative ability is very difficult to measure because it can manifest in so many
-                                surprising and.</p>
-                        </div>
+                <header data-aos="fade-down">
+                    <h2 class="special-heading">Portfolio</h2>
+                    <p>If you do it right, it will last forever.</p>
+                </header>
+                <div class="portfolio-content swiper">
+                    <div class="swiper-wrapper">
+                        <article class="swiper-slide card" data-aos="fade-right">
+                            <img src="images/laptop-kladblok-smartphone.jpg" loading="lazy" alt="A laptop, a smartphone and a notebook are on a table." />
+                            <div class="info">
+                                <h3>Project Here</h3>
+                                <div class="line"></div>
+                                <p>My creative ability is very difficult to measure because it can manifest in so many surprising ways.</p>
+                            </div>
+                        </article>
+                        <article class="swiper-slide card" data-aos="fade-up">
+                            <img src="images/portfolio.jpg" loading="lazy" alt="A laptop and a smartphone are on a table." />
+                            <div class="info">
+                                <h3>Project Here</h3>
+                                <div class="line"></div>
+                                <p>My creative ability is very difficult to measure because it can manifest in so many surprising ways.</p>
+                            </div>
+                        </article>
+                        <article class="swiper-slide card" data-aos="fade-left">
+                            <img class="photo" src="images/image-21-1536x1025.webp" loading="lazy" alt="A laptop, a glass and a notebook are on a table." />
+                            <div class="info">
+                                <h3>Project Here</h3>
+                                <div class="line"></div>
+                                <p>My creative ability is very difficult to measure because it can manifest in so many surprising ways.</p>
+                            </div>
+                        </article>
                     </div>
-                    <div class="card">
-                        <img src="images/portfolio.jpg" alt="" />
-                        <div class="info">
-                            <h3>Project Here</h3>
-                            <div class="line"></div>
-                            <p>My creative ability is very difficult to measure because it can manifest in so many
-                                surprising and.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img class="photo" src="images/image-21-1536x1025.webp" alt="" />
-                        <div class="info">
-                            <h3>Project Here</h3>
-                            <div class="line"></div>
-                            <p>My creative ability is very difficult to measure because it can manifest in so many
-                                surprising and.</p>
-                        </div>
-                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    
+                    <!-- Add Navigation -->
+                     <div class="swiper-btn-container">
+
+                         <button class="swiper-button-prev"></button>
+                     </div>
+                     <div class="swiper-btn-container">
+
+                         <button class="swiper-button-next"></button>
+                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- Portfolio -->
         <!-- About -->
-        <div class="about" id="about">
+        <section class="about" id="about">
             <div class="container">
-                <h2 class="special-heading">About</h2>
-                <p>Less is more work</p>
+                <header data-aos="fade-down">
+                    <h2 class="special-heading">About</h2>
+                    <p>Less is more work</p>
+                </header>
                 <div class="about-content">
-                    <div class="image2"><img src="images/pexels-trace-hudson-2724664.jpg" alt=""></div>
-                    <div class="text">
+                    <div class="image2" data-aos="slide-right"><img src="images/pexels-trace-hudson-2724664.jpg" alt="A mountain reaches the sky." loading="lazy"></div>
+                    <div class="text" data-aos="slide-left">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptate delectus quod. Quo, ab
                             magni. Eos corrupti tempora quod, provident eum deleniti commodi incidunt, repellendus quia
                             aliquam dolorem numquam laborum?</p>
@@ -192,33 +215,77 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- About -->
         <!-- Contact -->
-        <div class="contact" id="contact">
+        <section class="contact" id="contact">
             <div class="container">
-                <h2 class="special-heading">Contact</h2>
-                <p>We are born to create</p>
-                <div class="info">
+                <header data-aos="fade-down">
+                    <h2 class="special-heading">Contact</h2>
+                    <p>We are born to create</p>
+                </header>
+                <address class="info" data-aos="zoom-in" data-aos-duration="400">
                     <p class="label">Feel free to drop us a line at:</p>
                     <a href="mailto:aladdinelshamy@gmail.com?subject=Contact" class="link">aladdinelshamy@gmail.com</a>
-                    <div class="center">
-                        <div class="social">
-                            Find Us On Social Networks
-                            <i class="fab fa-youtube"></i>
-                            <i class="fab fa-facebook-f"></i>
-                            <i class="fab fa-twitter"></i>
-                        </div>
+                    <div class="flex-align-center">
+                        <p>Find Us On Social Networks</p>
+                        <nav class="social">
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </nav>
                     </div>
-                </div>
+                </address>
             </div>
-        </div>
+        </section>
+        </main>
         <!-- Contact -->
         <!-- Footer -->
-        <div class="footer">
-            <div class="container">&copy; 2021 <span>Leon</span> All Right Reserved</div>
-        </div>
+        <footer class="footer" data-aos="fade-up">
+            <p class="container">&copy; 2025 <span>Leon</span> All Right Reserved</p>
+        </footer>
         <!-- Footer -->
+         <!-- AOS JS -->
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                offset: 150,
+                duration: 600,
+                easing: 'linear',
+                delay: 100,
+                once: true
+            });
+        </script>
+        <!-- SWIPER JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            // Initialize Swiper
+            const swiper = new Swiper('.portfolio .swiper', {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                breakpoints: {
+                    // When window width is >= 768px
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 40
+                    },
+                    // When window width is >= 1024px
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 50
+                    }
+                }
+            });
+        </script>
     </body>
 
 </html>
