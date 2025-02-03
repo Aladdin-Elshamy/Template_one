@@ -7,7 +7,7 @@
 Leon is a responsive, modern web template designed for creative agencies, showcasing a clean and minimalist design approach. The template is built with a mobile-first responsive design strategy, ensuring a seamless user experience across different device sizes.
 
 ## Live Demo
-🌐 View Live Site
+🌐 [View Live Site](https://aladdinelshamy.github.io/Template_one/)
 
 ## Features
 
