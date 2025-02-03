@@ -85,7 +85,7 @@ Leon is a responsive, modern web template designed for creative agencies, showca
 
 ## Live Demo
 
-🌐 [View Live Site](https://aladdin-elshamy.github.io/Template_one/)
+🌐 ([View Live Site](https://aladdin-elshamy.github.io/Template_one/))
 
 ## Features
 
